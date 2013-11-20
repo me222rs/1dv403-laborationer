@@ -8,13 +8,76 @@ window.onload = function(){
 		// Returnera den konverterade strängen.
 		// Vid fel, kasta ett undantag med ett meddelande till användaren. 
 	
+    
+/*   
+	if(str.length < 1){
+	    return "Fel, du måste mata in något!";
+	}
+	
+	
+	if(str = str.replace(/a/gi, "#")){
+	    console.log(str);
+	}
+   
+    
+	for(var i=0;i<str.length;i++){
+ 
+        if(str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90){
+            
+            return (str.toLowerCase(i));
+}
+        else
+            return (str.toUpperCase(i));
+            
+}
+*/
+
+    var mickeäger = "";
+
+
+    //Ett dåligt anti-fula ord filter haha
+    if (str === "fitta" || str === "kuk" || str === "anus" || str === "iphone" || str === "apple"){
+        return "Inga fula ord din jävel!";
+    }
+
+    if(str.length < 1){
+	    return "Fel, du måste mata in något!";
+	}
+	
+    for (var char in str){
+        
+        if (str[char] === "A" || str[char] === "a"){
+            mickeäger += "#";
+        }
+        
+        else if (str[char] === str[char].toLowerCase()){
+            mickeäger += str[char].toUpperCase();
+        }
+        
+        else if (str[char] === str[char].toUpperCase()){
+            mickeäger += str[char].toLowerCase();
+        }
+        
+        
+        console.log(mickeäger);
+        
+    }
+    return mickeäger;
+    
+ 
+ 
+    
+ 
+ 
+ 
+};
+
+
+    
 
 
 
-
-
-
-	};
+	
 	// ------------------------------------------------------------------------------
 
 

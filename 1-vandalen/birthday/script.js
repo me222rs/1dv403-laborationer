@@ -4,9 +4,55 @@ window.onload = function(){
 
 	
 	var birthday = function(date){
-		
 
 
+    date = new Date();
+    
+/*    var input = new Date();
+    if(date +! date.toString("mm-dd-yyyy")) */
+
+    
+
+var today = new Date();     //dagens datum
+console.log(today);
+
+var birthdays = new Date(input.value);      //det inmatade datumet
+console.log(birthdays);
+
+var msPerDay = 24 * 60 * 60 * 1000 ;        //millisekunder per dag
+console.log(msPerDay);
+
+var timeLeft = (birthdays.getTime() - today.getTime());     //räknar ut tid kvar till födelsedagen. födelsedag - dagens datum.
+console.log(timeLeft);
+
+var e_daysLeft = timeLeft / msPerDay;       // tid kvar / millisekunder per dag
+console.log(e_daysLeft);
+
+var daysLeft = Math.floor(e_daysLeft);
+console.log(daysLeft);
+
+
+
+    daysLeft = daysLeft + 1;
+    
+    if (daysLeft === 0){
+        return daysLeft;
+    }
+    if(daysLeft > 0){
+        return Math.abs(daysLeft);
+    }
+    else{
+        return Math.abs(daysLeft + 365);
+    }
+    
+    
+    return (daysLeft);
+
+
+
+        
+    
+    
 			// Din kod här.
 
 
