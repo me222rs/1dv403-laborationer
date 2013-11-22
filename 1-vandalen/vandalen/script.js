@@ -7,7 +7,22 @@ var makePerson = function(persArr){
 var result = {};
 
 //Ny array för namnen
-var name = [persArr[0].name, persArr[1].name, persArr[2].name];
+
+
+var sum = 0;
+//var name = [persArr[0].name, persArr[1].name, persArr[2].name];
+var name = [];
+var age = [];
+
+
+for (var i = 0; i < persArr.length; i++){
+    name.push(persArr[i].name);
+    age.push(persArr[i].age);
+    sum += parseInt(persArr[i].age);
+    
+}
+
+
 
 //Sorterar skiten i bokstavsordning, localeCompare sorterar även svenska tecken
 name.sort(function(a,b){
@@ -17,7 +32,7 @@ name.sort(function(a,b){
 result.names = name.join(", ");
 
 //Ny array för ålder
-var age = [data[0].age, data[1].age, data[2].age];
+//var age = [data[0].age, data[1].age, data[2].age];
 age.sort();
 
 
@@ -26,10 +41,8 @@ result.minAge = Math.min.apply(Math,age);
 result.maxAge = Math.max.apply(Math,age);
 
 
-var sum = 0;
-for (var i = 0; i < persArr.length; i++){
-    sum += parseInt(persArr[i].age);
-}
+
+
 
 //Medelvärde räknas ut
 result.averageAge = Math.ceil(sum / persArr.length);

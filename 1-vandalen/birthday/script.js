@@ -19,6 +19,11 @@ console.log(today);
 var birthdays = new Date(input.value);      //det inmatade datumet
 console.log(birthdays);
 
+//if (birthdays.getTime() < today.getTime()){
+//    birthdays.setFullYear(today.getFullYear() + 1);
+//}
+
+
 var msPerDay = 24 * 60 * 60 * 1000 ;        //millisekunder per dag
 console.log(msPerDay);
 
