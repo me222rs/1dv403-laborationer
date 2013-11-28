@@ -8,38 +8,39 @@ window.onload = function(){
 
     date = new Date();
     
-/*    var input = new Date();
-    if(date +! date.toString("mm-dd-yyyy")) */
-
-    
 
 var today = new Date();     //dagens datum
-console.log(today);
+console.log("Today date: ", today);
 
 var birthdays = new Date(input.value);      //det inmatade datumet
-console.log(birthdays);
+console.log("Birthday date: ", birthdays);
 
-//if (birthdays.getTime() < today.getTime()){
-//    birthdays.setFullYear(today.getFullYear() + 1);
-//}
-
+if (birthdays.getTime() < today.getTime()){         //Om födelsedatumet redan varit
+    birthdays.setFullYear(today.getFullYear() + 1); 
+}
+else{
+    birthdays.setFullYear(today.getFullYear());
+}
 
 var msPerDay = 24 * 60 * 60 * 1000 ;        //millisekunder per dag
-console.log(msPerDay);
+console.log("Milliseconds per day: ", msPerDay);
 
 var timeLeft = (birthdays.getTime() - today.getTime());     //räknar ut tid kvar till födelsedagen. födelsedag - dagens datum.
-console.log(timeLeft);
+console.log("Time Left: ",timeLeft);
 
 var e_daysLeft = timeLeft / msPerDay;       // tid kvar / millisekunder per dag
-console.log(e_daysLeft);
+console.log("Estimated days left: ", e_daysLeft);
 
 var daysLeft = Math.floor(e_daysLeft);
-console.log(daysLeft);
-
+console.log("Days Left: ", daysLeft + 1);
 
 
     daysLeft = daysLeft + 1;
     
+    if (daysLeft >= 365){
+        daysLeft = 0;
+    }
+
     if (daysLeft === 0){
         return daysLeft;
     }
@@ -48,10 +49,10 @@ console.log(daysLeft);
     }
     else{
         return Math.abs(daysLeft + 365);
-    }
+     }
     
     
-    return (daysLeft);
+    return daysLeft;
 
 
 
