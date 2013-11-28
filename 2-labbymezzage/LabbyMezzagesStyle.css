@@ -1,0 +1,11 @@
+.box{
+    margin: 5px;
+    border: 1px solid black;
+    width:470px;
+    background-color:green;
+}
+
+.main{
+    margin: 20px;
+}
+
