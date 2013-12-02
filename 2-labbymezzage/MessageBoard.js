@@ -1,4 +1,4 @@
-function MessageBoard(boardID){
+function MessageBoard(){
     var messages = [];          //Array som ska hålla alla meddelande
 }
 
