@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>Labby Mezzages - Laboration 2</title>
+<meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -9,21 +11,23 @@
 <div class="box">
 <div class="main">
 
+
+
 <h1>Labby Mezzages</h1>
 
 
-    <div id="messages">Här ska de skickade meddelanden komma upp!</div>
-        <div class="messagecount">
-            <p>Antal meddelanden:</p>
-        </div>
+    <div id="messages"></div>
+        
+            <p id="messagecount">Antal meddelanden: Inga meddelande har postats än!</p>
+        
     
         <textarea name="messageboard" id="messageboard" rows="4" cols="50"></textarea>
-        <input id="button" name="Skriv" type="button" value="Skriv">
+        <input id="button" type="submit" value="Skriv">
         
 </div>
 </div>
 
-<script type="text/javascript" src="Message.js"></script>
-<script type="text/javascript" src="MessageBoard.js"></script>
+<script type="text/javascript" src="message.js"></script>
+<script type="text/javascript" src="messageboard.js"></script>
 </body>
 </html>
