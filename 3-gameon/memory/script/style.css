@@ -1,0 +1,28 @@
+#container{
+    background-color:green;
+    width:200px;
+    height:320px;
+    padding-bottom:50px;
+    text-align:center;
+    box-shadow: 10px 10px 5px #888888;
+    padding-top:5px;
+    
+    
+}
+h2{
+    text-align:center;
+    margin:3px;
+}
+body{
+    width:200px;
+}
+html{
+    width:200px;
+}
+#theGame{
+    padding-left:43px;
+}
+
+p {
+    margin: 3px;
+}
