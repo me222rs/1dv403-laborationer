@@ -1,0 +1,73 @@
+.popUp{
+    background-color:white;   
+    width:300px;
+    margin-right: auto;
+    margin-left:auto;
+    box-shadow: 10px 10px 5px #888888;
+    border:2px solid black;
+    margin-top: -200px;
+    z-index: 1000; position:relative
+}
+
+
+p{
+    margin:5px;
+}
+
+form{
+    margin-right:auto;
+    margin-left:auto;
+    width: 180px;
+}
+
+.red{
+    background-color:red;
+}
+
+.green{
+    background-color:green;
+}
+
+#error1Hidden{
+    display:none;
+}
+#error2Hidden{
+    display:none;
+}
+#error3Hidden{
+    display:none;
+}
+#error4Hidden{
+    display:none;
+}
+#error5Hidden{
+    display:none;
+}
+#error1Show{
+    background-color:red;
+    border:solid black 1px;
+    font-size:12px;
+}
+#error2Show{
+    background-color:red;
+    border:solid black 1px;
+    font-size:12px;
+}
+#error3Show{
+    background-color:red;
+    border:solid black 1px;
+    font-size:12px;
+}
+#error4Show{
+    background-color:red;
+    border:solid black 1px;
+    font-size:12px;
+}
+#error5Show{
+    background-color:red;
+    border:solid black 1px;
+    font-size:12px;
+}
+
+
+

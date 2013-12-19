@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Validering</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div id="content">
+<form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbteknik/process_form.php" id="theForm" method="post">
+    
+    
+    <fieldset id="field">
+
+                        <label>Förnamn: </label>
+                        <div id="first"><input type="text" name="Förnamn" id="firstName" value=""><p id="error1Hidden">Förnamnet är inte korrekt</p></div>
+                    
+                  
+                        <label>Efternamn: </label>
+                        <div id="last"><input type="text" name="Efternamn" id="lastName" value=""><p id="error2Hidden">Efternamnet är inte korrekt</p></div>
+
+                    
+                        <label>Postnummer: </label>
+                        <div id="post"><input type="text" name="Postnummer" id="postalCode" value=""><p id="error3Hidden">Postnumret är inte korrekt</p></div>
+                  
+                  
+                        <label>Telefon: </label>
+                        <div id="tele"><input type="tel" name="Telefon" id="telephone" value=""><p id="error4Hidden">telefonnumret är inte korrekt</p></div>
+                        
+                        <label>E-Post </label>
+                        <div id="mail"><input type="email" name="E-post" id="e-mail" value=""><p id="error5Hidden">E-postadressen är inte korrekt</p></div> 
+                        
+                        <label>Prismodell</label>
+                    <div>
+                        <select name="Select" id="priceModel">
+                            <option>Låg</option>
+                            <option>Mellan</option>
+                            <option>Hög</option>
+                        </select>
+                    </div>
+
+
+        
+        <input id="button" type="submit" value="Skicka">
+    </fieldset>
+</form>
+</div>
+<script type="text/javascript" src="validering.js"></script>
+</body>
+</html>
