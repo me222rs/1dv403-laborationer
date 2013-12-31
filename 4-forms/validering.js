@@ -2,16 +2,16 @@ var validate = {
     pcDisplay:null,
     init: function(){
         
-        validate.form = document.getElementById("theForm");
+        validate.form = document.getElementById("theForm");     //Hittar formuläret
         console.log(validate.form);
-        validate.button = document.getElementById("button");
+        validate.button = document.getElementById("button");    //Hittar knappen
         validate.aTag = document.createElement("a");
         
         
         var divTag = validate.button.parentNode;      
         divTag.removeChild(validate.button);
         
-                
+        //Gör om knappen till en länk som tar användaren vidare till bekräftelsefönstret vid tryck     
         validate.aTag.setAttribute("href", "#");  
         var text = document.createTextNode("Nästa");
         validate.aTag.appendChild(text);
