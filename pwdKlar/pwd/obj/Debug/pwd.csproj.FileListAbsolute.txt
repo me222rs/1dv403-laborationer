@@ -1,0 +1,15 @@
+E:\PWD\PWD\pwd\pwd\bin\pwd.dll
+E:\PWD\PWD\pwd\pwd\bin\pwd.pdb
+E:\PWD\PWD\pwd\pwd\obj\Debug\pwd.csprojResolveAssemblyReference.cache
+E:\PWD\PWD\pwd\pwd\obj\Debug\pwd.dll
+E:\PWD\PWD\pwd\pwd\obj\Debug\pwd.pdb
+G:\PWD\PWD\pwd\pwd\bin\pwd.dll
+G:\PWD\PWD\pwd\pwd\bin\pwd.pdb
+G:\PWD\PWD\pwd\pwd\obj\Debug\pwd.csprojResolveAssemblyReference.cache
+G:\PWD\PWD\pwd\pwd\obj\Debug\pwd.dll
+G:\PWD\PWD\pwd\pwd\obj\Debug\pwd.pdb
+F:\PWD\PWD\pwd\pwd\bin\pwd.dll
+F:\PWD\PWD\pwd\pwd\bin\pwd.pdb
+F:\PWD\PWD\pwd\pwd\obj\Debug\pwd.csprojResolveAssemblyReference.cache
+F:\PWD\PWD\pwd\pwd\obj\Debug\pwd.dll
+F:\PWD\PWD\pwd\pwd\obj\Debug\pwd.pdb
